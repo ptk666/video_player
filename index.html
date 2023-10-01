@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player | Made by James</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="preloader">
+        <img src="./assets/Rolling-2s-200px.gif" alt="preloader">
+    </div>
+    <main>
+        <div class="main-title">
+            <h1>Video Player</h1>
+            <p>Made by James</p>
+        </div>
+        <div class="main-switch">
+            <label class="switch">
+                <input type="checkbox" id="cbox">
+                <span class="slider round"></span>    
+            </label>
+        </div>
+    </main>
+    <header>
+        <video id="video" class="header-video" muted autoplay loop>
+            <source src="./assets/file_example_MP4_1920_18MG.mp4" type="video/mp4" />
+        </video>
+    </header>
+    <script src="./app.js"></script>
+</body>
+</html>
